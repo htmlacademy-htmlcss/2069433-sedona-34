@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Дмитриев](https://up.htmlacademy.ru/htmlcss/34/user/2069433).
-* Наставник: `Максим Волков`(https://htmlacademy.ru/profile/id1158117).
+* Наставник: [Максим Волков](https://htmlacademy.ru/profile/id1158117).
 
 ---
 
