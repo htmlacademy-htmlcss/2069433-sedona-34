@@ -5,8 +5,90 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigtaion-link" href="main-page.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigtaion-link" href="about-sedona.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigtaion-link" href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigtaion-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigtaion-link" href="#">
+                  <span class="visually-hidden">
+                    Избранное
+                  </span>
+            </a>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <main class="main-index">
+      <h1 class="visually-hidden">Туристический городок: "Седона"</h1>
+        <img class="logo" src="#" alt="логотип Туристического городка Седона.">
+        <p>Седона — небольшой городок в Аризоне,
+          заслуживающий большего!</p>
+        <section class="advantages">
+          <h2 class="visually-hidden">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
+          <ul class="visuallly-hidden">
+            <li class="advantages-item">
+              <h3 class="advantages-title">Настоящий городок</h3>
+                <p class="advatnages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="advatnages-description">Жильё - Рекомендуем пожить в настоящем мотеле,
+                  всё как в кино!</p>
+                  <p class="advatnages-description">Еда - Всегда заказывайте
+                    топовый фирменный бургер, вы не разочаруетесь!</p>
+                    <p class="advatnages-description">Сувениры - Не только китайского,
+                      но и настоящего местного производства!</p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title">Там есть
+              мост дьявола</h3>
+              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <h3 class="advantages-title">Небольшая
+                площадь</h3>
+                <p>Все достопримечательности находятся очень близко</p>
+              <h3 class="advantages-title">Красивая
+                  дорога</h3>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h3 class="advantages-title">Мало
+                  туристов</h3>
+                  <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
+        </section>
+        <section class="services">
+          <h2 class="services-title">Заинтересовались?</h2>
+          <p class="services-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        </section>
+    </main>
 
+  <footer class="page-footer">
+    <section class="newsletter">
+      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email">Email</label>
+          <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+        </form>
+      </section>
+  </footer>
   </body>
 </html>
