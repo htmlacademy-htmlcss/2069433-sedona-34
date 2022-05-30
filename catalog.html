@@ -39,7 +39,7 @@
           </a>
         </li>
         <li>
-          <button class="button" type="submit">Хочу сюда!</button>
+          <button class="button" type="button">Хочу сюда!</button>
         </li>
       </ul>
     </nav>
@@ -50,11 +50,12 @@
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">
-          <span>Главная</span>
+          <span class="visually-hidden">Главная</span>
         </a>
       </li>
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link">Гостиницы</a>
+      </li>
     </ul>
     <section class="catalog-products">
       <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
@@ -110,16 +111,16 @@
             </li>
           </ul>
         </fieldset>
+        <button class="button" type="submit">Применить</button>
+        <button class="button" type="reset">Сбросить</button>
       </form>
-      <section>
-        <h3>Найдено гостиниц: 38</h3>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-      </section>
-      <button class="button" type="submit">Применить</button>
-      <button class="button" type="reset">Сбросить</button>
+    </section>
+    <section>
+      <h3>Найдено гостиниц: 38</h3>
+      <select class="select-control" aria-label="Сортировка">
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="expensive">Сначала дорогое</option>
+      </select>
     </section>
     <ul class="product-card">
       <li class="product-card-list">
@@ -129,8 +130,8 @@
             height="211">
         </a>
         <b class="product-card-price">от 4000₽</b>
-        <button class="button product-card-button">подробнее</button>
-        <button class="button product-card-button" type="submit">в избранное</button>
+        <a class="button product-card-button">подробнее</a>
+        <button class="button product-card-button" type="button">в избранное</button>
         <div>Рейтинг: 8,5</div>
       </li>
       <li class="product-card">
@@ -215,7 +216,7 @@
           <span class="visually-hidden">Telegram</span>
         </a>
         <a href="https://www.youtube.com/user/htmlacademyru">
-          <span>YouTube</span>
+          <span class="visually-hidden">YouTube</span>
         </a>
         <a href="https://htmlacademy.ru/">
           <img class="footer-contacts-logo" src="images/footer-icons/html-academy.svg" alt="лого html-academy"
