@@ -24,7 +24,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
 }
 
@@ -62,13 +62,6 @@ a {
   background: #ffffff;
 }
 
-.index-background {
-  background-repeat: no-repeat;
-  width: 1200px;
-  height: 485px;
-  background-color: #FFFFFF;
-  background-image: url(/images/main/index-background.jpg);
-}
 
 .page-about {
   font-family: "PT Sans", sans-serif;
@@ -80,19 +73,58 @@ a {
   color: #000000;
 }
 
-.a-text {
+.welcome-part {
+  background-image: url(/images/main/index-background.jpg);
+  background-color: #82B3D3;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 485px;
+  box-sizing: border-box;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  position: relative;
+}
+
+.welcome-part::before {
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z' fill='white'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  bottom: 0;
+  left: 0;
+  height: 57px;
+  width: 100%;
+}
+
+.index-background {
+  display: block;
+  margin: 0 auto 146px auto;
+}
+
+.welcome-part-text {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.welcome-part-subtext {
+  text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
-  color: #000000;
 }
 
 .advantages-item-city {
   text-align: left;
-  color: #fff;
+  color: #FFFFFF;
   background: #82B3D3;
 }
 
@@ -227,6 +259,7 @@ a {
 }
 
 .icon-list {
+  text-align: center;
   background-image: url(/images/catalog/icon-list.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -285,7 +318,43 @@ a {
   color: #333333;
 }
 
-.button-product-card-button {
+.button {
+  font-family: "PT Sans", sans-serif;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.want-here {
+  font-family: "PT Sans", sans-serif;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #756157;
+}
+
+.submit {
+  background: #82B3D3;
+  border-radius: 4px;
+}
+
+.product-card-button {
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -297,6 +366,7 @@ a {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
+  border-radius: 4px;
 }
 
 .product-card-button-green {
@@ -314,7 +384,7 @@ a {
   border-radius: 4px;
 }
 
-.button-product-card-button-favorite {
+.product-card-button-favorite {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
